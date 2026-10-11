@@ -1,0 +1,29 @@
+name: Connection problem
+description: The YedaBase MCP server does not connect or sign in from an AI client.
+labels: ["connection"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting. Do not include passwords, sign-in codes, tokens or personal data; this repository is public.
+  - type: dropdown
+    id: client
+    attributes:
+      label: AI client
+      options: [Claude, ChatGPT, Gemini CLI, Mistral Le Chat, Perplexity, Cursor, VS Code, Windsurf, Other]
+    validations:
+      required: true
+  - type: input
+    id: client_version
+    attributes:
+      label: Client version or plan (if known)
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: The step where it failed and any error message shown by the client.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected

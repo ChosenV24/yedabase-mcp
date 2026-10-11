@@ -1,0 +1,31 @@
+name: Tool problem
+description: A tool returns an error or an unexpected result.
+labels: ["tools"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include contact details from records, sign-in codes, tokens or personal data; this repository is public. For a problem with a specific record, email t@yedabase.com instead.
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options: [search_investors, get_investor, get_angles, list_fields, get_person, get_list, my_lists, my_notes, unlock_investor]
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      options: [Free preview, Annual plan]
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt or tool arguments
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What the tool returned and what you expected
+    validations:
+      required: true

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Account, billing or data questions (email)
+    url: https://yedabase.com/contact
+    about: "Questions about your YedaBase account, plan or a specific record: write to t@yedabase.com. Please do not post personal or account details in a public issue."
+  - name: Correction or removal of a person's data
+    url: https://yedabase.com/remove-my-data
+    about: Ask for a correction or for your information to be removed (answered within 30 days).
+  - name: Documentation
+    url: https://yedabase.com/help/api-and-mcp
+    about: Tools, scopes, limits and connection steps.
